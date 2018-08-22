@@ -48,7 +48,7 @@ to use mercurial.
 Modulo modifying the scripts for your specific shell, installing `dedalus` on
 Gaea would look something like the following:
 ```
-$ git clone 
+$ git clone https://github.com/spencerkclark/dedalus-on-gaea.git
 $ cd dedalus-on-gaea
 $ source env.sh
 $ source install.sh
@@ -76,3 +76,12 @@ $ aprun -n 32 python rayleigh_benard.py
 I have not tried it, but I expect that without too much trouble, one should be
 able to figure out how to submit batch jobs to run `dedalus` simulations or
 multiple cores.
+
+## See also
+The instructions here were derived from a number of sources, including the
+examples given in the [official `dedalus`
+documentation](https://dedalus-project.readthedocs.io/en/latest/installation.html#manual-installation) and
+[Nathaniel Tarshish's notes on setting up `dedalus` on the GFDL
+PPAN](https://github.com/nathanieltarshish/PPANdedalus/blob/master/GFDL_PPAN_instructions.md).
+The instructions [here](http://jaist-hpc.blogspot.com/2015/02/mpi4py.html) for
+installing `mpi4py` on a Cray machine were also helpful.
