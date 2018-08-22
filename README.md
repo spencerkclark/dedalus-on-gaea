@@ -16,7 +16,7 @@ $ source env.sh
 ```
 primes your environment for installing or running `dedalus`.  If `dedalus` has
 been installed, it activates the conda environment containing its Python
-dependencies.  In addition, it loads the cray-compatible modules for `mpich`,
+dependencies.  In addition, it loads the Cray-compatible modules for `mpich`,
 `hdf5-parallel`, and `fftw`; this populates key environment variables like
 `PATH` and `LD_LIBRARY_PATH` appropriately.  Sourcing the file also sets
 important environment variables for installing `dedalus` like `MPI_PATH`, and
@@ -55,7 +55,7 @@ $ source install.sh
 ```
 
 ## Running `dedalus` on Gaea
-Rather than `mpiexec`, cray machines use the `aprun` command to submit MPI
+Rather than `mpiexec`, Cray machines use the `aprun` command to submit MPI
 jobs.  To interactively run one of the `dedalus` example scripts to test things
 out, start an interactive job via:
 ```
@@ -76,8 +76,8 @@ $ aprun -n 32 python rayleigh_benard.py
 This runs successfully in my environment.
 
 I have not tried it, but I expect that without too much trouble, one should be
-able to figure out how to submit batch jobs to run `dedalus` simulations or
-multiple cores.
+able to figure out how to submit batch jobs to run `dedalus` simulations on
+multiple nodes.
 
 ## See also
 The instructions here were derived from a number of sources, including the
