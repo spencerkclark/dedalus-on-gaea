@@ -73,6 +73,8 @@ Finally, run `rayleigh_benard.py` using `aprun` and 32 cores:
 ```
 $ aprun -n 32 python rayleigh_benard.py
 ```
+This runs successfully in my environment.
+
 I have not tried it, but I expect that without too much trouble, one should be
 able to figure out how to submit batch jobs to run `dedalus` simulations or
 multiple cores.
