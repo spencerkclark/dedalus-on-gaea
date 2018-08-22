@@ -47,6 +47,6 @@ hg clone https://bitbucket.org/dedalus-project/dedalus $DEDALUS_REPO
 
 # Build the FFTW C-extensions using gcc (not the cray mpicc wrapper).
 source deactivate
-source activate dedalus_install
+source activate dedalus
 cd $DEDALUS_REPO
 CC=gcc python setup.py build_ext --inplace
