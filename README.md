@@ -1,5 +1,4 @@
-Installing and running `dedalus` on Gaea
-========================================
+## Installing and running `dedalus` on Gaea
 
 Within this repository there are four files which one can use as a reference
 for how one might go about installing `dedalus` on GFDL's Gaea computer.  Gaea
@@ -10,8 +9,7 @@ FFTW and parallel HDF5; we just to need to link to those.  The included files
 assume that you are using a zsh shell and have `conda` installed in some form
 already.  They should be easily translatable for use with other shells.
 
-`env.sh`
---------
+#### `env.sh`
 Sourcing this file in the command line, e.g.:
 ```
 $ source env.sh
@@ -24,8 +22,7 @@ dependencies.  In addition, it loads the cray-compatible modules for `mpich`,
 important environment variables for installing `dedalus` like `MPI_PATH`, and
 `FFTW_PATH`.
 
-`install.sh`
-------------
+#### `install.sh`
 Sourcing this file in the command line, e.g.:
 ```
 $ source install.sh
@@ -39,18 +36,15 @@ repository).  This script installs each of these files into the user's
 `unswept` directory in a folder called `software`:
 `/lustre/f1/unswept/$USER/software`.
 
-`dedalus.yml`
-------------
+#### `dedalus.yml`
 This is just an environment specification file for the Python dependencies of
 `dedalus` that we can install through conda.
 
-`hg.yml`
---------
+#### `hg.yml`
 This is just an environment specification file for the environment we will use
 to use mercurial.
 
-Installing `dedalus`
-====================
+## Installing `dedalus`
 Modulo modifying the scripts for your specific shell, installing `dedalus` on
 Gaea would look something like the following:
 ```
@@ -60,8 +54,7 @@ $ source env.sh
 $ source install.sh
 ```
 
-Running `dedalus` on Gaea
-=========================
+## Running `dedalus` on Gaea
 Rather than `mpiexec`, cray machines use the `aprun` command to submit MPI
 jobs.  To interactively run one of the `dedalus` example scripts to test things
 out, start an interactive job via:
