@@ -1,0 +1,14 @@
+name: dedalus
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.6
+  - numpy=1.12
+  - git
+  - cython
+  - scipy
+  - openblas
+  - matplotlib
+  - pathlib
+  - docopt
